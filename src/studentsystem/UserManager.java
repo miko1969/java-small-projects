@@ -10,8 +10,14 @@ import java.util.Scanner;
  * @date 2026/10/22-11:46
  */
 public class UserManager {
+
+    static ArrayList<User> list = new ArrayList<>();
+    static {
+        list.add(new User("zhangsan","100100290878347465",
+                "1234qwer","12398973645"));
+    }
     public static void main(String[] args) {
-        ArrayList<User> list = new ArrayList<>();
+
         Scanner sc = new Scanner(System.in);
         loop:
         while (true) {
